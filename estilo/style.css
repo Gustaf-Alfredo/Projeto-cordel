@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
@@ -12,6 +13,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
@@ -31,8 +33,9 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
-    font-size: 4em;
+    font-size: 10vw; /*obs*/
     font-family: var(--fonte2);
+    letter-spacing: 5px;
 
 }
 
@@ -69,10 +72,10 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
-    background-position: cover;
+    background-size: cover; /*obs*/
     /*colocou aqui pq usou nos dois*/
     background-attachment: fixed;
 }
@@ -84,17 +87,13 @@ section.imagem > p {
     text-shadow: 1px 1px 0px black;
 }
 
-section#img01 {
+section#q1 {
     background-image: url('../imagens/img1.jpg');
     background-position: right center;
-    
 }
 
-section#img02 {
+section#q2 {
     background-image: url('../imagens/img2.jpg');
-    background-position: bottom left;
-    
-    
 }
 
 footer {
